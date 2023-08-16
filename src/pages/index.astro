@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION, PFP_URL } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<div class="flex flex-col items-center justify-center">
+				<img
+					src={PFP_URL}
+					alt="Profile picture"
+					class="rounded-full w-48 h-48"
+				/>
+				<div class="flex flex-col items-center justify-center mt-10">
+					<h1 class="text-4xl font-bold">Hi, I'm <span class="text-blue-500">Adolf Hitler</span></h1>
+					<h2 class="text-2xl font-semibold">I'm a <span class="text-blue-500">ruler</span> and <span class="text-blue-500">tyrant</span></h2>
+				</div>
+				<!-- andd some addition content -->
+				<div class="flex flex-col items-center justify-center mt-10">
+					<h2 class="text-2xl font-semibold">I'm working on <span class="text-blue-500">eliminating dirty people</span> and <span class="text-blue-500">my nuts</span></h2>
+					<h2 class="text-2xl font-semibold text-center">and learning <span class="text-blue-500">how to lower my gas bill</span> and <span class="text-blue-500">make more concentration camps</span></h2>
+				</div>
+				<div class="flex flex-col items-center justify-center mt-10">
+					<h2 class="text-2xl font-semibold">I'm also a <span class="text-blue-500">genocide</span> and <span class="text-blue-500">murderer</span>.</h2>
+					<h2 class="text-2xl font-semibold">and I use <span class="text-blue-500">ur mom</span> as my sex partner.</h2>
+				</div>
+			</div>
+			<p class="mt-10 text-center text-xs">i use arch btw</p>
+		</main>
+		<Footer />
+	</body>
+</html>
